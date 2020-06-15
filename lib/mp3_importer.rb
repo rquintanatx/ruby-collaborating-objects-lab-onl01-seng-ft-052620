@@ -1,4 +1,4 @@
-require 'pry'
+|require 'pry'
 class MP3Importer
   attr_accessor :path 
   
@@ -12,6 +12,6 @@ class MP3Importer
   
   def import 
     binding.pry
-    files.each {}
+    files.each {|file| }
   end
 end 
