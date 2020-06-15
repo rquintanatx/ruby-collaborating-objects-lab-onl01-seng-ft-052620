@@ -12,5 +12,6 @@ class MP3Importer
   
   def import 
     binding.pry
+    files.each {}
   end
 end 
