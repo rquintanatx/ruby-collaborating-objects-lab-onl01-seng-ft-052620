@@ -10,8 +10,7 @@ class MP3Importer
     Dir.entries(@path).select {|f| !File.directory? f}
   end 
   
-  def import 
-    binding.pry
-    files.each {|file| }
+  def import
+    files.collect {|file| Song.new_by_filename(file) }
   end
 end 
